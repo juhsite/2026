@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julia’s 17th Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <main id="start" class="screen active">
+    <h1>Julia’s 17th<br>Birthday Party</h1>
+
+    <div class="lang-buttons">
+      <button aria-label="Deutsch auswählen" onclick="selectLang('de')">
+        Deutsch<br><span>German</span>
+      </button>
+      <button aria-label="Select English" onclick="selectLang('en')">
+        English<br><span>Englisch</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- INVITE -->
+  <main id="invite" class="screen">
+    <h2 id="langTitle"></h2>
+
+    <div class="card">
+      <p id="when"></p>
+    </div>
+
+    <div class="card">
+      <p id="where"></p>
+    </div>
+
+    <div class="card">
+      <p id="dresscode"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
